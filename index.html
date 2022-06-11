@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku game</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- login form -->
+    <form action="" method="post" class="login-form">
+      <label for="name">user name</label>
+      <input type="text" name="user-name" id="name" required />
+
+      <label for="game-level"> choose your level </label>
+      <select name="game-difficulty" id="game-level">
+        <option value="easy">Level 1</option>
+        <option value="hard">Level 2</option>
+      </select>
+
+      <button type="submit">login</button>
+    </form>
+    <!-- end of the form -->
+
+    <!-- choose imgs gallery  -->
+    <section class="choose-images-container">
+      <section class="choose-images game-easy hide">
+        <h2>choose your favorite heroes</h2>
+        <div class="group1-imgs">
+          <img src="imgs/4group-images1-1.png" alt="" />
+          <img src="imgs/4group-images1-2.png" alt="" />
+          <img src="imgs/4group-images1-3.png" alt="" />
+          <img src="imgs/4group-images1-4.png" alt="" />
+          <button value="4group-images1">group 1</button>
+        </div>
+        <div class="group2-imgs">
+          <img src="imgs/4group-images2-1.png" alt="" />
+          <img src="imgs/4group-images2-2.png" alt="" />
+          <img src="imgs/4group-images2-3.png" alt="" />
+          <img src="imgs/4group-images2-4.png" alt="" />
+          <button value="4group-images2">group 2</button>
+        </div>
+        <div class="group3-imgs">
+          <img src="imgs/4group-images3-1.png" alt="" />
+          <img src="imgs/4group-images3-2.png" alt="" />
+          <img src="imgs/4group-images3-3.png" alt="" />
+          <img src="imgs/4group-images3-4.png" alt="" />
+          <button value="4group-images3">group 3</button>
+        </div>
+        <div class="group4-imgs">
+          <img src="imgs/4group-images4-1.png" alt="" />
+          <img src="imgs/4group-images4-2.png" alt="" />
+          <img src="imgs/4group-images4-3.png" alt="" />
+          <img src="imgs/4group-images4-4.png" alt="" />
+          <button value="4group-images4">group 4</button>
+        </div>
+      </section>
+
+      <section class="choose-images game-hard hide">
+        <h2>choose your favorite heroes</h2>
+        <div class="group1-imgs">
+          <img src="imgs/9group-images1-1.png" alt="" />
+          <img src="imgs/9group-images1-2.png" alt="" />
+          <img src="imgs/9group-images1-3.png" alt="" />
+          <img src="imgs/9group-images1-4.png" alt="" />
+          <img src="imgs/9group-images1-5.png" alt="" />
+          <img src="imgs/9group-images1-6.png" alt="" />
+          <img src="imgs/9group-images1-7.png" alt="" />
+          <img src="imgs/9group-images1-8.png" alt="" />
+          <img src="imgs/9group-images1-9.png" alt="" />
+          <button value="9group-images1">group 1</button>
+        </div>
+        <div class="group2-imgs">
+          <img src="imgs/9group-images2-1.png" alt="" />
+          <img src="imgs/9group-images2-2.png" alt="" />
+          <img src="imgs/9group-images2-3.png" alt="" />
+          <img src="imgs/9group-images2-4.png" alt="" />
+          <img src="imgs/9group-images2-5.png" alt="" />
+          <img src="imgs/9group-images2-6.png" alt="" />
+          <img src="imgs/9group-images2-7.png" alt="" />
+          <img src="imgs/9group-images2-8.png" alt="" />
+          <img src="imgs/9group-images2-9.png" alt="" />
+          <button value="9group-images2">group 2</button>
+        </div>
+      </section>
+    </section>
+    <!-- end of choose images section -->
+
+    <!-- user info -->
+    <section class="player-info hide">
+      <h3 class="player-name"></h3>
+      <h3 class="player-timer"></h3>
+      <button class="start-button">Start</button>
+    </section>
+
+    <!-- game section -->
+    <section class="board">
+      <table class="imgs-table"></table>
+      <table class="board-table"></table>
+    </section>
+
+    <script src="gameLogic.js"></script>
+    <!-- <script src="beforerefactore2.js"></script> -->
+  </body>
+</html>
