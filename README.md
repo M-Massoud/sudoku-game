@@ -2,7 +2,7 @@
 Sudoku game with pictures instead of numbers for kids.
 
 the game has two levels
-4*4 grid and 9*9 grid
+4X4 grid and 9X9 grid
 
 you can play the game using the mouse or keyboard arrows and numbers 
 
