@@ -1,4 +1,9 @@
 # sudoku-game
+Sudoku game with pictures instead of numbers for kids.
+
+the game has two levels
+4*4 grid and 9*9 grid
+
 you can play the game using the mouse or keyboard arrows and numbers 
 
 if you play it with the mouse choose the needed img first (by clicking on it) then click on the needed cell to place it.
